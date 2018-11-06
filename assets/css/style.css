@@ -1,0 +1,64 @@
+html, body {
+    background-image: url("../images/pipes.png");
+    /* background-size: 100%; */
+    font-family:Lucida Grande;
+}
+.container {
+    width:1100px;;
+    height:100%;
+}
+p {
+    color:navy;
+    width:100px;
+    word-wrap: break-word;
+}
+button {
+    background-color:lightskyblue;
+    text-align:center;
+    margin:5px;
+    border-radius: 10px;
+    padding:5px;
+}
+#topics-view {
+    background-color:navy;
+    border-radius:15px;
+    height:50px;
+}
+#topic-typed {
+    height:40px;
+    writing-mode: horizontal-tb;
+    border-radius:15px;
+}
+#add-topic {
+    background-color:lightskyblue;
+    border-radius: 15px;
+    padding:5px;
+    border: solid 3px navy;;
+}
+label {
+    background-color:lightskyblue;
+    border-radius: 15px;
+    padding:5px;
+    border:solid 3px navy;
+    height:100%;
+    width:200px;
+    text-align:center;
+}
+#gif-pic, #rating {
+    float:left;
+    position:absolute;
+}
+img {
+    height:250px;
+    width:250px;
+    border: solid 2px navy;
+    border-radius:8px;
+}
+div1 {
+    display:inline-block;
+    white-space: nowrap;
+    margin:10px;
+}
+#topic-form {
+    float:right;
+}
