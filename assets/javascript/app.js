@@ -1,5 +1,5 @@
 //variables used
-var topics = ["skunk", "dog", "red dead redemption 2", "bison", "bird", "everclear" ];
+var topics = ["skunk", "dog", "whiskey", "bison", "football", "drunk" ];
 var queryURL = "";
 var animal = "";
 var singleTopic = "";
@@ -20,7 +20,7 @@ var singleTopic = "";
     $("button").on("click", function() {
       var animal = $(this).attr("data-name");
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        animal + "&api_key=1Ap9PRfNxbH1S8pDXRJkIkh2mwOKmiPR&limit=10";
+        animal + "&api_key=KIyENXLtFC9C6ZrDCisfZOa24R3w8Yme&limit=10";
         event.preventDefault();
         
       $.ajax({
@@ -135,77 +135,3 @@ $("#add-topic").on("click", function(event){
   
 })
 })
-
-  
-  
-  
-  
-
-  
- // B();
-
-//function B () {
-/*$("button").on("click", function() {
-    var animal = $(this).attr("data-name");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-      animal + "&api_key=1Ap9PRfNxbH1S8pDXRJkIkh2mwOKmiPR&limit=10";
-      event.preventDefault();
-      
-    $.ajax({
-      url: queryURL,
-      method: "GET"
-    })
-      .then(function(response) {
-        var results = response.data;
-
-        for (var i = 0; i < results.length; i++) {
-          var gifDiv = $("<div1>");
-
-          var rating = results[i].rating;
-          
-          var p = $("<p>").text("Rating: " + rating);
-
-          var animal = $("<img>");
-          //animal.attr("src", results[i].images.fixed_height.url);
-          animal.attr("src", results[i].images.original_still.url);
-          animal.attr("data-still", results[i].images.original_still.url)
-          animal.attr("data-animate", results[i].images.original.url)
-          animal.attr("data-state", "still");
-          animal.addClass("img-responsive center-block gif")
-
-          gifDiv.prepend(p);
-          gifDiv.prepend(animal);
-        
-
-          $("#gif-pic").prepend(gifDiv);
-          $("#rating").html(response);
-        }
-        $("img").on("click", function() {
-          console.log("test"); 
-          var state = $(this).attr("data-state");
-          if (state === "still") {
-              $(this).attr("src", $(this).attr("data-animate"));
-              $(this).attr("data-state", "animate");
-            } else if (state === "animate") {
-              $(this).attr("src", $(this).attr("data-still"))
-              $(this).attr("data-state", "still");
-            }});
-            
-    })
-  }) 
-
-  */
-  
-  
-
-  //renderButtons();
-//calling functions to run game
-
-//B();
-
-
-
-
-
-
-
